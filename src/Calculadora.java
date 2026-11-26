@@ -9,6 +9,9 @@ public class Calculadora {
         System.out.println("Multiplicación: " + multiplicar(8, 4));
         System.out.println("División: " + dividir(8, 4));
         System.out.println("División por cero: " + dividir(8, 0));
+        System.out.println("Potencia (8^4): " + potencia(2, 3));
+        System.out.println("¿Es par 4?: " + esPar(4));
+        System.out.println("¿Es par 1?: " + esPar(7));
     }
     public static double restar(double a, double b) {
         return a - b;
@@ -26,5 +29,8 @@ public class Calculadora {
     }
     public static double potencia(double base, int exponente) {
         return Math.pow(base, exponente);
+    }
+    public static boolean esPar(int numero) {
+        return numero % 2 == 0;
     }
 }
