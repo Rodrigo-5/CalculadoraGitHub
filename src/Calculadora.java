@@ -24,4 +24,7 @@ public class Calculadora {
         }
         return a / b;
     }
+    public static double potencia(double base, int exponente) {
+        return Math.pow(base, exponente);
+    }
 }
